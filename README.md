@@ -1,0 +1,1 @@
+Scripts, Reg Files, and NTLite configs to debloat, fix, and optimize Windows....especially the headache that is Windows 11. Please note that most of these optimizations are for if you have a RTX Nvidia card, alot of the registry changes are specifically for those because of different driver registry locations to GTX Nvidia cards.
