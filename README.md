@@ -22,7 +22,8 @@ https://www.techpowerup.com/nvcleanstall
 LatencyMon- pretty much benchmarking how much lag is in your system, test changes, help troubleshoot, and point out problem areas.
 https://www.resplendence.com/latencymon
 
-ExplorerPatcher- An ABSOLUTE MUST if you are using Windows 11. This fixes that garbage start menu, context menu, and all the incovienent changes made in 11. My shared settings makes it exactly like Windows 10 but with the advantages of Windows 11 like tabs in File Explorer.
+ExplorerPatcher- An ABSOLUTE MUST if you are using Windows 11. This fixes that garbage start menu, context menu, and all the inconvenient
+changes made in 11. My shared settings makes it exactly like Windows 10 but with the advantages of Windows 11 like tabs in File Explorer.
 https://github.com/valinet/ExplorerPatcher
 
 Nirsoft Utilities- There are so many useful utilities here but the ones I use most are ShellMenuView, ShellMenuNew, and ShellExView to easily make changes to the context menu. Mostly to remove some or move them to the Shift+RightClick extended context menu to reduce clutter. Can't really add programs to context menu with these sadly but that can be done with Nilesoft Shell but that also requires you to code a program in yourself (not for newbies) but that is definitely easier than doing it through the OS itself.
