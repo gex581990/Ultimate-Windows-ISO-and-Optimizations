@@ -1,5 +1,5 @@
 # Scripts, Reg Files, and NTLite configs to debloat, fix, and optimize Windows....especially the headache that is Windows 11. 
-### *Please note that most of these optimizations are for if you have a RTX Nvidia card, alot of the registry changes are specifically for those because of different driver registry locations to GTX Nvidia cards.
+*Please note that most of these optimizations are for if you have a RTX Nvidia card, alot of the registry changes are specifically for those because of different driver registry locations to GTX Nvidia cards.
 
 ## Anyone using Asus motherboards: 
 Download your drivers from [here](https://rog-forum.asus.com/t5/hardware-build-advice/index-all-my-drivers-firmware-software-threads/m-p/827232). MoKiChU does great work debloating drivers and releasing driver updates Asus themselves are too lazy or slow to release themselves. Asus's site has some pretty old drivers, some don't even get updated and those that do are behind by like 6 months. Definitely important to have updated drivers, just always check changelogs and avoid troublesome driver updates. 
