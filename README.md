@@ -2,6 +2,8 @@ Scripts, Reg Files, and NTLite configs to debloat, fix, and optimize Windows....
 
 Anyone using Asus motherboards should download their drivers from [here](https://rog-forum.asus.com/t5/hardware-build-advice/index-all-my-drivers-firmware-software-threads/m-p/827232). MoKiChU does great work debloating drivers and releasing driver updates Asus themselves are too lazy or slow to release themselves. Asus's site has some pretty old drivers, some don't even get updated and those that do are behind by like 6 months. Definitely important to have updated drivers, just always check changelogs and avoid troublesome driver updates. 
 
+[Chris Titus's Windows Utility](https://github.com/ChrisTitusTech/winutil): Very useful tool especially right after a clean install of Windows. 
+
 Recommended Apps to download:
 
 NTLite (purchasing the home version is a necessity and worth every penny. Free version is very limited)- Tool to make custom Windows ISO's to debloat, customize your OS, alter online images, and remove any reinstalled bloat from an update.
