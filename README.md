@@ -3,6 +3,7 @@
 
 
 ![Desktop](https://github.com/gex581990/Windows-Optimizations/assets/129348281/8da1f2e5-2108-4da8-b701-792227dbbc88)
+![Desktop2](https://github.com/gex581990/Windows-Optimizations/assets/129348281/92694806-bcd2-42d0-9f4b-4921b0d2b17b)
 
 
 ## My NTLite Configs:
