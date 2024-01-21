@@ -1,6 +1,13 @@
 # Scripts, Reg Files, and NTLite configs to debloat, fix, and optimize Windows....especially the headache that is Windows 11. 
 *Please note that most of these optimizations are for if you have a RTX Nvidia card, alot of the registry changes are specifically for those because of different driver registry locations to GTX Nvidia cards.
 
+<<<<<<< HEAD
+![Desktop](https://github.com/gex581990/Windows-Optimizations/assets/129348281/8da1f2e5-2108-4da8-b701-792227dbbc88)
+
+
+
+=======
+>>>>>>> parent of b2b0810 (Update README.md)
 ## My NTLite Configs:
 My configs were made with the goal of having the most debloated I could make the OS while also keeping compatibility in tact for gaming, general multi-tasking, VM's, and developing tools. Most debloated ISO's or configs are solely focused on gaming and break alot of OS features especially stuff like VM's, dev environments, or even stuff as simply as printing or using headphones. Some ISO's even break the start menu and Appx altogether making things really difficult. So I kept average useful stuff intact, somethings may be disabled but still intact just needing a setting changed. But even on high end systems my custom iso's alone make an enormous differerence even before apply all my tweaks. Especially with Windows 11. My Windows 10 config also makes an enormous difference just 11 is more bloated so my config goes even further on there
 
