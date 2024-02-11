@@ -1,0 +1,10 @@
+Warning! This will disable Dynamic P States on your gpu. You will be at your gpu's max frequency until it gets close to max temp then will slowly drop voltage and frequency.
+
+If your GPU's cooling is poor you should skip this
+
+If you have a high performer and don't mind tweaking in overclocking software then this give you max perf consistently.
+
+Since there isn't so many fluctuations in frequency this will also help with latency making things consistent.
+
+It doesn't make sense to always be at max when you aren't even doing anything tho so I recommend using GPU overclocking software like GPUtweak
+or Msi Afterburner to lock your voltage/freq at a much lower setting when you aren't doing something GPU intensive so you can keep your temps down and not have unnecessary wear and tear.
