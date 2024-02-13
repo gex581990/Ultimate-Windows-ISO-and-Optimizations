@@ -1,0 +1,1 @@
+Sometimes when installing a custom ISO I've noticed some permission issues with some Appx programs and parts of the OS that might cause some weird issues. Running this solves that and is just a good precaution to run anyways. If you have issues at any point later on that SFC Scan or DISM don't fix then this most likely will. Just a good step for problem solving at any point.
