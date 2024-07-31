@@ -203,12 +203,6 @@
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Anisotropic filtering setting</SettingNameInfo>
-        <SettingID>270426537</SettingID>
-        <SettingValue>1</SettingValue>
-        <ValueType>Dword</ValueType>
-      </ProfileSetting>
-      <ProfileSetting>
         <SettingNameInfo>SLI indicator</SettingNameInfo>
         <SettingID>271085649</SettingID>
         <SettingValue>877871204</SettingValue>
@@ -395,12 +389,6 @@
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Anisotropic filtering mode</SettingNameInfo>
-        <SettingID>282245910</SettingID>
-        <SettingValue>0</SettingValue>
-        <ValueType>Dword</ValueType>
-      </ProfileSetting>
-      <ProfileSetting>
         <SettingNameInfo>Antialiasing - Transparency Supersampling</SettingNameInfo>
         <SettingID>282364549</SettingID>
         <SettingValue>0</SettingValue>
@@ -449,7 +437,7 @@
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Memory Allocation Policy</SettingNameInfo>
+        <SettingNameInfo />
         <SettingID>286335539</SettingID>
         <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
@@ -591,7 +579,9 @@
   <Profile>
     <ProfileName>Biohazard 1 (Resident Evil 1)</ProfileName>
     <Executeables>
+      <string>biohazard_dc.exe</string>
       <string>biohazard.exe</string>
+      <string>biohazard_ds.exe</string>
     </Executeables>
     <Settings>
       <ProfileSetting>
@@ -1105,7 +1095,7 @@
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Memory Allocation Policy</SettingNameInfo>
+        <SettingNameInfo />
         <SettingID>286335539</SettingID>
         <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
@@ -1179,19 +1169,125 @@
     </Settings>
   </Profile>
   <Profile>
-    <ProfileName>Death Stranding Director's Cut</ProfileName>
+    <ProfileName>Dead Space 2</ProfileName>
     <Executeables>
-      <string>deathstrandingdc/deathstranding.exe</string>
-      <string>deathstrandingdc/ds.exe</string>
-      <string>death stranding directors cut/ds.exe</string>
+      <string>activation.exe</string>
+      <string>deadspace2.exe</string>
+      <string>vcredist_x86_en.exe</string>
     </Executeables>
     <Settings>
       <ProfileSetting>
-        <SettingNameInfo>Texture filtering - Negative LOD bias</SettingNameInfo>
-        <SettingID>1686376</SettingID>
+        <SettingNameInfo>NVIDIA predefined SLI mode</SettingNameInfo>
+        <SettingID>271830721</SettingID>
+        <SettingValue>3</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>NVIDIA predefined number of GPUs to use on SLI rendering mode</SettingNameInfo>
+        <SettingID>271834322</SettingID>
+        <SettingValue>4</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Do not display this profile in the Control Panel</SettingNameInfo>
+        <SettingID>275602687</SettingID>
+        <SettingValue>0</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>278257400</SettingID>
+        <SettingValue>37748741</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Antialiasing - Behavior Flags</SettingNameInfo>
+        <SettingID>283958146</SettingID>
         <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Enable application for Optimus</SettingNameInfo>
+        <SettingID>284810369</SettingID>
+        <SettingValue>17</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>540166535</SettingID>
+        <SettingValue>524965</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Vulkan/OpenGL present method</SettingNameInfo>
+        <SettingID>550932728</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1881060439</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1883883500</SettingID>
+        <SettingValue>4.0</SettingValue>
+        <ValueType>String</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1884112238</SettingID>
+        <SettingValue>Go To: Setting/Visuals/Custom Render Settings Shadow Quality = Off  Some objects render at wrong depth Some lights render incorrectly Fog renders halo around character</SettingValue>
+        <ValueType>String</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1884415477</SettingID>
+        <SettingValue>4</SettingValue>
+        <ValueType>String</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1885319148</SettingID>
+        <SettingValue>2011-02-09 00:00:00</SettingValue>
+        <ValueType>String</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1888336069</SettingID>
+        <SettingValue>1060798652</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1889148383</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1890934847</SettingID>
+        <SettingValue>D3D</SettingValue>
+        <ValueType>String</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>1894626177</SettingID>
+        <SettingValue>35</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+    </Settings>
+  </Profile>
+  <Profile>
+    <ProfileName>Death Stranding Director's Cut</ProfileName>
+    <Executeables>
+      <string>deathstrandingdc/deathstranding.exe</string>
+      <string>death stranding directors cut/ds.exe</string>
+      <string>deathstrandingdc/ds.exe</string>
+    </Executeables>
+    <Settings>
       <ProfileSetting>
         <SettingNameInfo>Texture filtering - Trilinear optimization</SettingNameInfo>
         <SettingID>3066610</SettingID>
@@ -1226,6 +1322,12 @@
         <SettingNameInfo>Anisotropic filtering setting</SettingNameInfo>
         <SettingID>270426537</SettingID>
         <SettingValue>16</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>NVIDIA Predefined Ansel Usage</SettingNameInfo>
+        <SettingID>271965065</SettingID>
+        <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -1484,27 +1586,27 @@
     </Executeables>
     <Settings>
       <ProfileSetting>
-        <SettingNameInfo>Vertical Sync Tear Control</SettingNameInfo>
-        <SettingID>5912412</SettingID>
-        <SettingValue>2525368439</SettingValue>
+        <SettingNameInfo>Anisotropic filtering setting</SettingNameInfo>
+        <SettingID>270426537</SettingID>
+        <SettingValue>16</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Vertical Sync</SettingNameInfo>
-        <SettingID>11041231</SettingID>
-        <SettingValue>1199655232</SettingValue>
-        <ValueType>Dword</ValueType>
-      </ProfileSetting>
-      <ProfileSetting>
-        <SettingNameInfo>Flag to control smooth AFR behavior</SettingNameInfo>
-        <SettingID>270198627</SettingID>
-        <SettingValue>0</SettingValue>
+        <SettingNameInfo>NVIDIA Predefined Ansel Usage</SettingNameInfo>
+        <SettingID>271965065</SettingID>
+        <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo />
         <SettingID>274606621</SettingID>
         <SettingValue>4</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Anisotropic filtering mode</SettingNameInfo>
+        <SettingID>282245910</SettingID>
+        <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
@@ -1672,12 +1774,6 @@
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Antialiasing - Mode</SettingNameInfo>
-        <SettingID>276757595</SettingID>
-        <SettingValue>1</SettingValue>
-        <ValueType>Dword</ValueType>
-      </ProfileSetting>
-      <ProfileSetting>
         <SettingNameInfo />
         <SettingID>278257400</SettingID>
         <SettingValue>38805509</SettingValue>
@@ -1690,21 +1786,95 @@
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Antialiasing - Transparency Supersampling</SettingNameInfo>
-        <SettingID>282364549</SettingID>
-        <SettingValue>56</SettingValue>
+        <SettingNameInfo>Enable application for Optimus</SettingNameInfo>
+        <SettingID>284810369</SettingID>
+        <SettingValue>17</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+    </Settings>
+  </Profile>
+  <Profile>
+    <ProfileName>Resident Evil 4 / Biohazard 4</ProfileName>
+    <Executeables>
+      <string>re4.exe</string>
+    </Executeables>
+    <Settings>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>983226</SettingID>
+        <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
-        <SettingNameInfo>Antialiasing - Setting</SettingNameInfo>
-        <SettingID>282555346</SettingID>
-        <SettingValue>37</SettingValue>
+        <SettingNameInfo />
+        <SettingID>983227</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>983295</SettingID>
+        <SettingValue>AAAAYAAAAAA=</SettingValue>
+        <ValueType>Binary</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo> </SettingNameInfo>
+        <SettingID>6710885</SettingID>
+        <SettingValue>0</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>12623113</SettingID>
+        <SettingValue>2</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Enable TrueHDR Feature</SettingNameInfo>
+        <SettingID>14502139</SettingID>
+        <SettingValue>0</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>NVIDIA Predefined FXAA Usage</SettingNameInfo>
+        <SettingID>271895433</SettingID>
+        <SettingValue>0</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>NVIDIA Predefined Ansel Usage</SettingNameInfo>
+        <SettingID>271965065</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>274606621</SettingID>
+        <SettingValue>4</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Do not display this profile in the Control Panel</SettingNameInfo>
+        <SettingID>275602687</SettingID>
+        <SettingValue>0</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
         <SettingNameInfo>Enable application for Optimus</SettingNameInfo>
         <SettingID>284810369</SettingID>
         <SettingValue>17</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>Shim Rendering Mode Options per application for Optimus</SettingNameInfo>
+        <SettingID>284810372</SettingID>
+        <SettingValue>16777216</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo />
+        <SettingID>2156231208</SettingID>
+        <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
     </Settings>
@@ -2032,6 +2202,12 @@
         <ValueType>Dword</ValueType>
       </ProfileSetting>
       <ProfileSetting>
+        <SettingNameInfo>NVIDIA Predefined Ansel Usage</SettingNameInfo>
+        <SettingID>271965065</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
         <SettingNameInfo />
         <SettingID>274606621</SettingID>
         <SettingValue>1</SettingValue>
@@ -2119,9 +2295,7 @@
   </Profile>
   <Profile>
     <ProfileName>Resident Evil HD</ProfileName>
-    <Executeables>
-      <string>bhd.exe</string>
-    </Executeables>
+    <Executeables />
     <Settings>
       <ProfileSetting>
         <SettingNameInfo />
@@ -2138,6 +2312,12 @@
       <ProfileSetting>
         <SettingNameInfo>Enable TrueHDR Feature</SettingNameInfo>
         <SettingID>14502139</SettingID>
+        <SettingValue>1</SettingValue>
+        <ValueType>Dword</ValueType>
+      </ProfileSetting>
+      <ProfileSetting>
+        <SettingNameInfo>NVIDIA Predefined Ansel Usage</SettingNameInfo>
+        <SettingID>271965065</SettingID>
         <SettingValue>1</SettingValue>
         <ValueType>Dword</ValueType>
       </ProfileSetting>
