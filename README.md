@@ -50,7 +50,7 @@ Put this in Powershell as admin to download:
 winget install ZeusSoftware.nGlide
 ```
 
-## Recommended Apps to Download: (My Winget Scripts contain most of these so you can quickly instally these)
+## Recommended Apps to Download: (My Winget Scripts contain most of these so you can quickly install these)
 
 - #### [NTLite](https://www.ntlite.com/shop)-
 Tool to make custom Windows ISO's to debloat, customize your OS, alter online images, and remove any reinstalled bloat from an update. Purchasing the home version is a necessity and worth every penny. Free version is limited and I'm not sure what important features might be missing.
