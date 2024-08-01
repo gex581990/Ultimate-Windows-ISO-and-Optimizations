@@ -15,9 +15,8 @@ Words cannot express how bloated Windows 11 is with useless junk, telemetry, and
 ## Anyone using Asus motherboards: 
 Download your drivers from [here](https://rog-forum.asus.com/t5/hardware-build-advice/index-all-my-drivers-firmware-software-threads/m-p/827232). MoKiChU does great work debloating drivers and releasing driver updates Asus themselves are too lazy or slow to release themselves. Asus's site has some pretty old drivers, some don't even get updated and those that do are behind by like 6 months. Definitely important to have updated drivers, just always check changelogs and avoid troublesome driver updates. 
 
-## C++ Redistributable All in One-
+## [C++ Redistributable All in One](https://github.com/abbodi1406/vcredist)-
 Almost all games and programs rely on these to work, this puts them all in one package with no bloat. Makes life simple. Important to download right after a clean install of Windows 
-https://github.com/abbodi1406/vcredist
 
 ## [Chris Titus's Windows Utility](https://github.com/ChrisTitusTech/winutil):
 Very useful tool especially right after a clean install of Windows. He makes it easy to download recommended apps like browsers, runtimes, dev tools, media players, or whatever you might need. Download all the .NET runtimes, just like the C++ Redistributables these are very important for programs and games to work properly. The big thing on this utility are some of the tweaks he has on there. Alot of the tweaks are included in my scripts and reg files but there are some I dont include that might be useful for you. I do recommend running my tweaks again after running his tho cause his include some registry changes that alter some of my priority settings and Ive found my settings improve a little bit better so running his tweaks then mine brings the best result. The utility doesn't need to be downloaded. You can simply paste the command below
@@ -32,67 +31,52 @@ Thank you again to @ChrisTitusTech for your helpful Youtube channel and all the 
 ## Compatibility 
 One of my goals for the perfect OS is for the best compatibility with older games, programs, and maybe even stuff from other platforms. There are some amazing tools out there like hypervisors, VM's, emulators, and wrappers to make things compatible on modern Windows that might not properly work otherwise. An amazing resource for stuff like this is https://emulation.gametechwiki.com/index.php/Main_Page but I'll share some things I think are essential for compatibility. 
 
-- #### `WineVDM`- 
+- #### [Compatibility Manager](https://github.com/nbusseneau/CompatibilityManager)-
+Speaking of Compatibility, the Compatibility Manager is a great place to start. Giving you the ability to change program settings in bulk to fix DPI issues, disable Fullscreen Optimizations, ect. My reg settings did do variable environment and reg tweaks meant to disable Fullscreen Optimizations system wide but sadly those tweaks don't work on everything. Even the official way of changing settings in Properties doesn't always work anymore, but the method this manager does works better in general. Stacked up with my tweaks I don't really get the odd issues like I used to. DWM and applications just don't get along, even DX12 games do some weird stuff with FSO so it's not just a retro game thing either. It's just better to let the game engines do their job based on the configs you set without DWM being a confusing middleman adding latency and bugs.
+- #### [WineVDM](https://github.com/otya128/winevdm)- 
 Makes your 64-bit Windows install compatible with 16-bit games/programs or even 32-bit games/programs that might use a 16-bit installer. 64-bit Windows normally are not compatible with 16-bit programs at all. 32-bit versions of Windows include NTVDM which is an ancient tool Windows made to make Windows NT compatible with DOS environments and doesn't work on 64-bit Windows. Luckily Leecher1337 ported NTVDM to 64-bit Windows "NTVDMx64" but was a work in progress and had it's issues but the work they did helped otya128 who then implimented some of the well known Wine compatibility layer (used to make Windows games/programs compatible in Linux) into the equation which then surpassed NTVDMx64. It does look like [NTVDMx64](https://github.com/leecher1337/ntvdmx64) is getting updates again tho which is great news. Both projects are great, I've just had better luck with WineVDM tho NTVDMx64 has it's own plus and minuses so could depend on the usage. Leecher1337 themselves recommends WineVDM if your focus is just running 16-bit programs, seems he is more focused on the DOS side of things which is still awesome.
-https://github.com/otya128/winevdm
-- #### `Windows Subsystem for Linux (WSL2)`-
+- #### [Windows Subsystem for Linux (WSL2)](https://learn.microsoft.com/en-us/windows/wsl/install) -
 One of the few things I can actually praise Microsoft for is their WSL tool. It's essentially a way to natively run Linux programs and environments while still in your Windows desktop. If you do any kind of development this is a god send. You can easily pull up a Linux terminal inside Windows Terminal (which is the newest evolution of Powershell). It works like a VM but intertwined in your Windows desktop so you don't have to switch back and forth from a vm, plus it interacts with Windows. You can even have Linux programs in your start menu and desktop.
-https://learn.microsoft.com/en-us/windows/wsl/install
-- #### `Windows Subsystem for Android`- 
+- #### [Windows Subsystem for Android](https://learn.microsoft.com/en-us/windows/android/wsa/)- 
 I don't personally use this but you might find it useful. It works the same way as WSL but with Android apps and environments.
-https://learn.microsoft.com/en-us/windows/android/wsa/
-- #### `DgVoodoo2`-
+- #### [DgVoodoo2](https://github.com/dege-diosg/dgVoodoo2)-
 Very useful wrapper that makes majority of older games compatible on modern pc's by translating Glide 2.11-3.10, DirectDraw 1-7, and Direct3D 2-7 into DX11 or DX12.
-https://github.com/dege-diosg/dgVoodoo2
-- #### `WineD3D`-
+- #### [WineD3D](https://fdossena.com/?p=wined3d/index.frag)-
 Another wrapper that uses Wine more on the api side of things to translate DirectDraw 1-7 and Direct3D 2-7 into Vulkan or OpenGL.
-https://fdossena.com/?p=wined3d/index.frag
-- #### `nGlide`-
+- #### [nGlide](https://www.zeus-software.com/downloads/nglide)-
 yet another wrapper that focuses on just the Voodoo Glide API. Translates Glide into Vulkan or DX9.
 Put this in Powershell as admin to download:
 ```
 winget install ZeusSoftware.nGlide
 ```
 
-## Recommended Apps to Download: 
+## Recommended Apps to Download: (My Winget Scripts contain most of these so you can quickly instally these)
 
-- #### `NTLite`-
+- #### [NTLite](https://www.ntlite.com/shop)-
 Tool to make custom Windows ISO's to debloat, customize your OS, alter online images, and remove any reinstalled bloat from an update. Purchasing the home version is a necessity and worth every penny. Free version is limited and I'm not sure what important features might be missing.
-https://www.ntlite.com/shop
-- #### `Nilesoft Shell`-
+- #### [Nilesoft Shell](https://github.com/moudey/Shell)-
 Make custom context menus (especially useful for replacing Windows 11's completely useless context menu and adding some flare).
-https://github.com/moudey/Shell
-- #### `GoInterruptPolicy`-
+- #### [GoInterruptPolicy](https://github.com/spddl/GoInterruptPolicy)-
 Reduce latency and stutter by turning on MSI mode for drivers, associating which cores drivers are gonna be using, and change priorities. Can also increase performance in some cases, especially if you are using Intel Cpu's with E-cores or AMD Cpu's with 3d cache
-https://github.com/spddl/GoInterruptPolicy
-- #### `O&O Shut Up 10`-
+- #### [O&O Shut Up 10](https://www.oo-software.com/en/shutup10)-
 tell Windows to Shut Up, stop spying, and killing perf for no reason.
-https://www.oo-software.com/en/shutup10
-- #### `NVCleanstall`-
+- #### [NVCleanstall](https://www.techpowerup.com/nvcleanstall)-
 debloat Nvidia drivers to combat DPC latency, audio stutter, and lag in general.
-https://www.techpowerup.com/nvcleanstall
-- #### `LatencyMon`-
+- #### [LatencyMon](https://www.resplendence.com/latencymon)-
 pretty much benchmarking how much lag is in your system, test changes, help troubleshoot, and point out problem areas.
-https://www.resplendence.com/latencymon
-- #### `ExplorerPatcher`-
+- #### [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher)-
 An ABSOLUTE MUST if you are using Windows 11. This fixes that garbage start menu, context menu, and all the inconvenient
 changes made in 11. My shared settings makes it exactly like Windows 10 but with the advantages of Windows 11 like tabs in File Explorer.
-https://github.com/valinet/ExplorerPatcher
-- #### `Nirsoft Utilities`-
+- #### [Nirsoft Utilities](https://www.nirsoft.net/utils)-
 There are so many useful utilities here but the ones I use most are ShellMenuView, ShellMenuNew, and ShellExView to easily make changes to the context menu. Mostly to remove some or move them to the Shift+RightClick extended context menu to reduce clutter. Can't really add programs to context menu with these sadly but that can be done with Nilesoft Shell but that also requires you to code a program in yourself (not for newbies) but that is definitely easier than doing it through the OS itself.
-https://www.nirsoft.net/utils
-- #### `Sysinternals Suite`-
+- #### [Sysinternals Suite](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite)-
 I recommend downloading the whole suite. Everything here is useful and makes problem solving so much easier. Process Monitor and Process Explorer are must's and can help point out problem processes, malware, and test priorities easily.
-https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
-- #### `Microsoft Powertoys`-
+- #### [Microsoft Powertoys](https://learn.microsoft.com/en-us/windows/powertoys)-
 Makes life so much easier on Windows. Registry Preview, Powertoys Run, Always on Top, Color Picker, Fancy Zones, and Power Rename are some of my favorites that have saved me ALOT of time doing any kind of development and multitasking in general.
-https://learn.microsoft.com/en-us/windows/powertoys
-- #### `NanaZip`-
+- #### [NanaZip](https://github.com/M2Team/NanaZip)-
 By far the best free archiving program, is based on 7zip but much much better with more features, control, and much better compression.
-https://github.com/M2Team/NanaZip
-- #### `Driver Store Explorer (RAPR)`-
+- #### [Driver Store Explorer (RAPR)](https://github.com/lostindark/DriverStoreExplorer)-
 Program that makes removing and adding drivers very easy. Device Manager doesn't fully remove drivers, it only stops associating with a driver (if it even works) while continuing to store the driver and might still leave some conflict. This program likes you fully remove the driver with easy, can also show you all drivers in system and what ones are currently associated. This pointed out to me that Intel's chipset driver installer was actually installing a few unrelated drivers while leaving the ones needed not installed or not associated. 
-https://github.com/lostindark/DriverStoreExplorer
-- #### `Link Shell Extension`-
+- #### [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)-
 An awesome program that makes creating Symbolics Links, Hard Links, and Juctions as easy as possible. It add's an option to your context menu to create Symbolic Links, Hard Links, Junctions and much more. This makes it so easy to organize your files however you want together without having to move them between drives. Essentially makes shortcuts without the programs or anything know that they are shortcuts. Also makes accessing network files easier. There is alot of other uses too but convenience is a big one.
-https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html
+
