@@ -52,6 +52,8 @@ winget install ZeusSoftware.nGlide
 
 ## Recommended Apps to Download: (My Winget Scripts contain most of these so you can quickly install these)
 
+- #### [Nvidia Profile Inspector](https://github.com/Orbmu2k/nvidiaProfileInspector)-
+This is a must. It's a tool for changing settings in the Nvidia driver for the base profile and game profiles. Most settings aren't included in the Control Panel, this tool shows nearly all possible settings in the driver even hidden ones. Even if Control Panel has the same settings, the options are more limited than on Profile Inspector. Also a useful tool for saving and import/exporting game profiles so you don't lose everything when you do a driver update. 
 - #### [NTLite](https://www.ntlite.com/shop)-
 Tool to make custom Windows ISO's to debloat, customize your OS, alter online images, and remove any reinstalled bloat from an update. Purchasing the home version is a necessity and worth every penny. Free version is limited and I'm not sure what important features might be missing.
 - #### [Nilesoft Shell](https://github.com/moudey/Shell)-
