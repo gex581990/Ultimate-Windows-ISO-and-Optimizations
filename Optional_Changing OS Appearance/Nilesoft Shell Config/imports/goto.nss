@@ -1,4 +1,4 @@
-menu(type='*' where=window.is_taskbar||sel.count mode=mode.multiple title=title.go_to sep=sep.both image=\uE14A)
+menu(type='*' where=window.is_taskbar||sel.count mode=mode.multiple title=title.go_to image=\uE14A)
 {
 	menu(title='Folder' image=\uE1F4)
 	{

@@ -23,12 +23,13 @@
 				normal = #cccccc
 				select = #9cdcfe
 				normal-disabled = #b1b1b1
-				select-disabled = #b1b1b1
+				select-disabled = #000000
 			}
 			back
 			{
+				normal-disabled = #000000
 				select = #190436
-				select-disabled = #000000
+				select-disabled = #b1b1b1
 			}
 		}
 		border{

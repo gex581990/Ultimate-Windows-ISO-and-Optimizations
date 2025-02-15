@@ -1,18 +1,15 @@
-﻿menu(where=sel.count>0 type='file|dir|drive|namespace|back' mode="multiple" title='File Manage' image=\uE253)
+menu(where=sel.count>0 type='file|dir|drive|namespace|back' mode="multiple" title='File Manage' image=\uE253 sep=before)
 {
 	menu(separator="after" title=title.copy_path image=icon.copy_path)
 	{
-		item(where=sel.count > 1 title='Copy (@sel.count) items selected' cmd=command.copy(sel(false, "\n")))
-		item(mode="single" title=@sel.path tip=sel.path cmd=command.copy(sel.path))
-		item(mode="single" type='file' separator="before" find='.lnk' title='open file location' cmd=path.parent(path.lnktarget(sel.path)))
-		separator
-		item(mode="single" where=@sel.parent.len>3 title=sel.parent cmd=@command.copy(sel.parent))
-		separator
-		item(mode="single" type='file|dir|back.dir' title=sel.file.name cmd=command.copy(sel.file.name))
-		item(mode="single" type='file' where=sel.file.len != sel.file.title.len title=@sel.file.title cmd=command.copy(sel.file.title))
-		item(mode="single" type='file' where=sel.file.ext.len>0 title=sel.file.ext cmd=command.copy(sel.file.ext))
+		import 'Snippets/all.copy.path.all.nss'
+		import 'Snippets/all.copy.path.env.nss'
+		import 'Snippets/all.copy.path.ps.nss'
+		import 'Snippets/all.copy.path.lnk.nss'
+		import 'Snippets/nss.paths.nss'
+		import 'Snippets/all.copy.list.cp.nss'
 	}
-
+		
 	item(mode="single" type="file" title="Change extension" image=\uE0B5 cmd=if(input("Change extension", "Type extension"), 
 		io.rename(sel.path, path.join(sel.dir, sel.file.title + "." + input.result))))
 	
@@ -23,9 +20,22 @@
 		item(title="None" image=icon.select_none cmd=command.select_none)
 	}
 	
-	item(type='file|dir|back.dir|drive' title='Take Ownership' image=[\uE194,#f00] admin
-		cmd args='/K takeown /f "@sel.path" @if(sel.type==1,null,"/r /d y") && icacls "@sel.path" /grant *S-1-5-32-544:F @if(sel.type==1,"/c /l","/t /c /l /q")')
-	separator
+	menu(type='file|dir|back.dir|drive' mode='single' title='Manage Ownership' image=[\uE194,#f00] )
+    {
+        item(title='View Ownership' admin
+            cmd args='/K powershell -NoExit Get-ACL \"@sel.path\"^| Format-List -Property Owner')
+        item(title='Take Ownership' admin
+            cmd args='/K takeown /f "@sel.path" @if(sel.type==1,null,"/r /d y") && icacls "@sel.path" /grant *S-1-5-32-544:F @if(sel.type==1,"/c /l","/t /c /l /q")')
+        item(title='To Administrators' admin
+            cmd args='/K icacls "@sel.path" /setowner "Administrators" @if(sel.type==1,"/c /l","/t /c /l /q")')
+        item(title='To Everyone' admin
+            cmd args='/K icacls "@sel.path" /setowner "Everyone" @if(sel.type==1,"/c /l","/t /c /l /q")')
+        item(title='To Trusted Installer' admin
+            cmd args='/K icacls "@sel.path" /setowner "NT Service\TrustedInstaller" @if(sel.type==1,"/c /l","/t /c /l /q")')
+        item(title='Reset Permissions' admin
+            cmd args='/K icacls "@sel.path" /reset & pause')
+    }
+	sep
 	menu(title="Show/Hide" image=icon.show_hidden_files)
 	{
 		item(title="System files" image=inherit cmd='@command.togglehidden')
@@ -47,9 +57,9 @@
 		item(title='Archive' checked=io.attribute.archive(atrr)
 			cmd args='/c ATTRIB @if(io.attribute.archive(atrr),"-","+")A "@sel.path"' window=hidden)
 		separator
-		item(title="CREATED" keys=io.dt.created(sel.path, 'y/m/d') cmd=io.dt.created(sel.path,2000,1,1))
-		item(title="MODIFIED" keys=io.dt.modified(sel.path, 'y/m/d') cmd=io.dt.modified(sel.path,2000,1,1))
-		item(title="ACCESSED" keys=io.dt.accessed(sel.path, 'y/m/d') cmd=io.dt.accessed(sel.path,2000,1,1))
+		item(title="Created" keys=io.dt.created(sel.path, 'y/m/d') cmd=io.dt.created(sel.path,2000,1,1) vis=label)
+		item(title="Modified" keys=io.dt.modified(sel.path, 'y/m/d') cmd=io.dt.modified(sel.path,2000,1,1) vis=label)
+		item(title="Accessed" keys=io.dt.accessed(sel.path, 'y/m/d') cmd=io.dt.accessed(sel.path,2000,1,1) vis=label)
 	}
 
 	menu(mode="single" type='file' find='.dll|.ocx' separator="before" title='Register Server' image=\uea86)
@@ -75,6 +85,7 @@
 			item(title='HTML' cmd=io.file.create('@(dt).html', "<html>\n\t<head>\n\t</head>\n\t<body>Hello World!\n\t</body>\n</html>"))					
 		}
 	}
+
 	
 	item(where=!wnd.is_desktop title=title.folder_options image=icon.folder_options cmd=command.folder_options)
 }

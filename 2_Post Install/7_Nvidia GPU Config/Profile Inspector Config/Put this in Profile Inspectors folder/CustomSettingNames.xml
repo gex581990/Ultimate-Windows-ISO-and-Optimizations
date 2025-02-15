@@ -241,6 +241,14 @@
           <UserfriendlyName>Preset G (unused)</UserfriendlyName>
           <HexValue>0x00000007</HexValue>
         </CustomSettingValue>
+		<CustomSettingValue>
+          <UserfriendlyName>Preset J</UserfriendlyName>
+          <HexValue>0x0000000A</HexValue>
+        </CustomSettingValue>
+        <CustomSettingValue>
+          <UserfriendlyName>Preset K</UserfriendlyName>
+          <HexValue>0x00FFFFFF</HexValue>
+        </CustomSettingValue>
       </SettingValues>
       <SettingMasks />
     </CustomSetting>

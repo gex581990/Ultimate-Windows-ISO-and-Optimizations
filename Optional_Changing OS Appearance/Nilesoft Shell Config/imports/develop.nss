@@ -1,14 +1,8 @@
-﻿menu(mode="multiple" title='&Develop' sep=sep.bottom image=\uE26E)
+﻿menu(mode="multiple" title='&Develop' image=\uE26E)
 {
 	menu(mode="single" title='editors' image=\uE17A)
 	{
-		item(title='Visual Studio Code' image=[\uE272, #22A7F2] cmd='code' args='"@sel.path"' window=hidden)
-		item(title='Git-Bash' image cmd='C:\Program Files\Git\git-bash.exe' args='"@sel.path"')
-		item(title='Git-GUI' image cmd='C:\Program Files\Git\cmd\git-gui.exe' args='"@sel.path"')
-		separator
-		item(type='file' mode="single" title='Windows notepad' image cmd='@sys.bin\notepad.exe' args='"@sel.path"')
-		separator
-		
+		item(title='Visual Studio Code' image=[\uE272, #22A7F2] cmd='code' args='"@sel.path"')
 	}
 
 	menu(mode="multiple" title='dotnet' image=\uE143)
@@ -37,4 +31,6 @@
 		item(title='help' image=\uE136 cmd-line='/k dotnet -h')
 		item(title='version' cmd-line='/k dotnet --info')
 	}
+
+
 }
