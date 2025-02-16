@@ -1,6 +1,6 @@
 menu(where=sel.count>0 type='file|dir|drive|namespace|back' mode="multiple" title='File Manage' image=\uE253 sep=before)
 {
-	menu(separator="after" title=title.copy_path image=icon.copy_path)
+	menu(title=title.copy_path image=icon.copy_path)
 	{
 		import 'Snippets/all.copy.path.all.nss'
 		import 'Snippets/all.copy.path.env.nss'
@@ -9,6 +9,9 @@ menu(where=sel.count>0 type='file|dir|drive|namespace|back' mode="multiple" titl
 		import 'Snippets/nss.paths.nss'
 		import 'Snippets/all.copy.list.cp.nss'
 	}
+
+	import 'all.security.env.nss'
+	sep
 		
 	item(mode="single" type="file" title="Change extension" image=\uE0B5 cmd=if(input("Change extension", "Type extension"), 
 		io.rename(sel.path, path.join(sel.dir, sel.file.title + "." + input.result))))
