@@ -12,6 +12,7 @@ import 'imports/theme.nss'
 import 'imports/images.nss'
 
 import 'imports/modify.nss'
+import 'imports/bar.scroll.nss'
 import 'imports/app.WinRAR.nss'
 import 'imports/file-manage.nss'
 
