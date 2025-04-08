@@ -23,12 +23,12 @@ menu(mode="multiple" title="Pin/Unpin" image=icon.pin)
 import 'imports/all.terminal.nss'
 import 'imports/develop.nss'
 import 'imports/notepad.nss'
-import 'imports/Powertoys.nss'
 import 'imports/media.nss'
 import 'imports/Environment.nss'
-import 'imports/goto.nss'
+import 'imports/goto.v2.nss'
 import 'imports/taskbar.nss'
 import 'imports/tools.nss'
+import 'imports/snippets/all.keyboard.shortcuts.nss'
 
 menu(mode="multiple" title=title.more_options image=icon.more_options)
 {

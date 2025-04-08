@@ -2,7 +2,7 @@
 // Based on: Nilesoft Shell original snippet
 // https://github.com/RubicBG/Nilesoft-Shell-Snippets/
 
-menu(type='*' where=window.is_taskbar||sel.count mode=mode.multiple title=title.go_to+"\t"+'v2.0' image=\uE14A)
+menu(type='*' where=window.is_taskbar||sel.count mode=mode.multiple title=title.go_to image=\uE14A)
 {
 	menu(title='Folder' image=\uE1F4)
 	{

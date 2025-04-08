@@ -18,6 +18,7 @@ menu(mode="multiple" title="Media" type='file|dir|back.dir|drive|back.drive|desk
         modify(find="Browse with XnViewMP" menu='Media/XnviewMP')
     }
 
-    modify(find="MediaInfo" menu= "Media")
-
+    modify(find="MediaInfo" menu='Media')
+    modify(find="Edit with Paint" menu='Media')
+    modify(find="Edit with Photos" menu='Media')
 }

@@ -21,6 +21,7 @@ modify(find="open with visual studio" pos=1 menu="develop/editors")
 modify(find="Open with HxD" image='@sys.prog\HxD\HxD.exe' menu="develop/editors" ) 
 
 modify(find="Winmerge" image='C:\Program Files\WinMerge\WinMergeU.exe')
+modify(find="Start with SpecialK" menu="Environment")
 
 
 //Move and organize

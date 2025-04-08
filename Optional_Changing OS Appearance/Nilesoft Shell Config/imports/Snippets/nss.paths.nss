@@ -1,7 +1,7 @@
 // Author: Rubic / RubicBG
 // https://github.com/RubicBG/Nilesoft-Shell-Snippets/
 
-menu(title='Copy NS path' mode='single' image=\uE249 tip='Copy Nilesoft Shell path'  
+menu(title='Copy NS path' mode='single' image=icon.copy_path tip='Copy Nilesoft Shell path' 
 	vis=if(str.contains(sel.path, app.dir) or str.contains(sel.path, user.home) or str.contains(sel.path, sys.root) or str.contains(sel.raw, '::{031E4825-7B94-4DC3-B131-E946B44C8DD5}'), 'true', 'disabled')) {
 	// https://nilesoft.org/docs/functions/app
 	item(cmd=command.copy(this.title) where=str.contains(sel.path, app.directory) title='@@'+'app.directory'+str.sub(sel.path, len(app.directory)))
